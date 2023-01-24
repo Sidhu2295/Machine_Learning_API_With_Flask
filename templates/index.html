@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banglore House Prediction</title>
+</head>
+<body>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+
+            {{ form.location.label }}
+            {{ form.location() }}
+            <br/>
+            {{ form.total_sqft.label }}
+            {{ form.total_sqft() }}
+            <br/>
+            {{ form.bathrooms.label }}
+            {{ form.bathrooms() }}
+            <br/>
+            {{ form.bhk.label }}
+            {{ form.bhk() }}
+            <br/>
+            {{ form.submit() }}
+            <br/>
+            {{ prediction }}
+        </form>
+</body>
+</html>
